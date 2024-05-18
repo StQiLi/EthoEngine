@@ -1,0 +1,59 @@
+# Ignore build output files
+build/
+dist/
+
+# Ignore dependencies
+node_modules/
+vendor/
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore sensitive or personal information
+secrets.txt
+credentials.json
+
+# Ignore generated documentation
+docs/
+
+# Ignore backup files
+*.bak
+*.swp
+*.swo
+
+# Ignore cache and temporary files
+.cache/
+.tmp/
+
+# Ignore user-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore miscellaneous files
+*.bak
+*.zip
+*.gz
+*.tar
+*.rar
