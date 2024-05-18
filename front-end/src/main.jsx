@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { AuthProvider } from '@propelauth/react';
 import App from './App';
+import YourApp from './components/YourApp';
 
-const authUrl = "https://3554294.propelauthtest.com";
+import { AuthProvider } from "@propelauth/react";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <AuthProvider authUrl={authUrl}>
-      <Router>
-        <App />
-      </Router>
-    </AuthProvider>
-  </React.StrictMode>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+    <AuthProvider authUrl={import.meta.env.VITE_AUTH_URL}>
+        <YourApp />
+    </AuthProvider>,
 );
